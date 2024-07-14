@@ -17,7 +17,7 @@ function updateTime() {
     greeting = "Good evening";
   }
 
-  const greets = `${greeting} ${name}`;
+  const greets = `${greeting}`;
   const formattedTime = `it is ${hours}:${minutes}:${seconds} on ${month}/${day}/${year}`;
 
   document.getElementById("time").innerHTML = formattedTime;
