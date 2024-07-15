@@ -9,12 +9,22 @@ function updateTime() {
   const seconds = String(now.getSeconds()).padStart(2, "0");
 
   let greeting;
-  if (hours < 12) {
+  if (hours < 5) {
+    greeting = "Wake up Sleepyhead";
+  }
+  else if (hours < 7) {
     greeting = "Good morning";
-  } else if (hours < 17) {
+  }
+   else if (hours < 15) {
     greeting = "Good afternoon";
-  } else {
+  } else if (hours <= 20){
     greeting = "Good evening";
+  }
+  else if(hours >= 22){
+    greeting = "Still awake ?, go to bed baby"
+  }
+  else{
+    greeting = "Good Night, Rawwwrr"
   }
 
   const greets = `${greeting}`;
