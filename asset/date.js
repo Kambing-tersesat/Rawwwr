@@ -12,12 +12,12 @@ function updateTime() {
   if (hours < 5) {
     greeting = "Wake up Sleepyhead";
   }
-  else if (hours < 7) {
+  else if (hours < 6) {
     greeting = "Good morning";
   }
-   else if (hours < 15) {
+   else if (hours < 12) {
     greeting = "Good afternoon";
-  } else if (hours <= 20){
+  } else if (hours <= 18){
     greeting = "Good evening";
   }
   else if(hours >= 22){
